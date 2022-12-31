@@ -80,9 +80,9 @@ header {
     justify-content: space-between;
     padding: 1rem 1.5rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    /* position: fixed; */
+    position: fixed;
     left: 345px;
-    width: calc(100%-345px);
+    width: calc(100% - 345px);
     top: 0;
     z-index: 100;
 }
@@ -132,4 +132,45 @@ header label span {
     display: inline-block;
     color: var(--text-gray);
     /* margin-top: -3px; */
+}
+
+main {
+    margin-top: 85px;
+    padding: 2rem 1.5rem;
+    background: #f1f5f9;
+    min-height: calc(100vh - 90px);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    margin-top: 1rem;
+}
+
+.single-cards {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 2px;
+}
+
+.single-cards div:last-child span {
+    color: var(--main-color);
+    font-size: 3rem;
+}
+
+.single-cards div:first-child span {
+    color: var(--text-gray);
+}
+
+.single-cards:last-child {
+    background: var(--main-color);
+}
+
+.single-cards:last-child h1,
+.single-cards:last-child div:first-child span,
+.single-cards:last-child div:last-child span {
+    color: #fff;
 }
