@@ -47,7 +47,7 @@
 .sidebar-menu a {
     padding-left: 1rem;
     display: block;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #fff;
 }
 
@@ -61,4 +61,8 @@
 .sidebar-menu a span:first-child {
     font-size: 1.5rem;
     padding-right: 1rem;
+}
+
+h1 {
+    color: black;
 }
